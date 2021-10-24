@@ -64,6 +64,19 @@
     cursor: pointer;
     display: none;
 }
+/* similar content*/
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
 /* home section styling */
 .home{
     display: flex;
@@ -94,46 +107,12 @@
     color: #a13f3f;
     font-weight: 500;
 }
-
 /* about section styling*/
-section{
-    padding: 100px 0;
-}
-.about{
+.about, .skill, .blog, .media, .contact {
     display: flex;
     font-family: 'Popins', sans-serif;
 }
-.about .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-}
-.about .title::before{
-    content:"";
-    position: absolute;
-    bottom: 0px;
-    left:50%;
-    height: 3px;
-    width: 180px;
-    background-color: #111;
-    transform:translateX(-50%);
-}
-.about .title::after{
-    content:"Who I am";
-    font-size: 20px;
-    color: #a13f3f;
-    position: absolute;
-    bottom: -12px;
-    left:50%;
-    padding: 5px;
-    background-color: #fff;
-    transform:translateX(-50%);
-}
-.about .about-content{
+.about .about-content, .skill .skill-content, .blog .blog-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -176,6 +155,85 @@ section{
 .about .about-content .right a:hover{
     color: #a13f3f;
     background: none;
+}
+/*skill section*/
+.skill {
+    color: #fff;
+    background-color: black;
+}
+.skill .title::before{
+    background-color: #fff;
+}
+.skill .skill-content .card {
+    width: 32%;
+    background-color: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.skill .skill-content .card:hover{
+    background-color: #a13f3f;
+}
+.skill .skill-content .card:hover .container{
+    transform: scale(1.05);
+}
+.skill .skill-content .card .container{
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+.skill .skill-content .card .container i{
+    font-size: 50px;
+    color: #a13f3f;
+}
+.skill .skill-content .card:hover .container i{
+    color: #fff;
+}
+.skill .skill-content .card .container .skill-name{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+/*blog section*/
+.blog .blog-content .blog-container{
+    width: 32%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 50px rgb(82 109 122 / 10%);
+}
+.blog .blog-content .blog-container:hover article{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.blog .blog-content .blog-container .text .blog-img{
+    width: 100%;
+    height: aoto;
+}
+.blog .blog-content .blog-container .text .blog-name{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: left;
+}
+.blog .blog-content .blog-container .text p{
+    text-align: left;
+}
+.blog .blog-content .blog-container .text a{
+    float: right;
+    margin: 20px 0;
+    font-size: 10px;
+    font-weight: 500;
+    color: #a13f3f;
+    visibility: hidden;
+    border-radius: 6px;
+}
+.blog .blog-content .blog-container:hover .text a{
+    visibility: inherit;
+    cursor: pointer;
 }
 
 
@@ -256,6 +314,10 @@ section{
     .about .about-content .right{
         flex: 100%;
     }
+    .skill .skill-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width:690px){
     .home .home-content .text-2{
@@ -264,4 +326,10 @@ section{
     .home .home-content .text-3{
         font-size: 25px;
     }  
+    .skill .skill-content .card{
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+
 }
