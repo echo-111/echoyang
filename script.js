@@ -11,5 +11,12 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-    
+    //media 
+	$('.media-content').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+		gallery: {
+			enabled: true
+		}
+    })
 });
