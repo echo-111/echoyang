@@ -1,0 +1,96 @@
+@import "./variables";
+
+.contact {
+    @include sectionDisplay;
+    padding: $sectionPadding;
+
+    .title {
+        @include sectionTitle;
+    }
+
+    .contact-content {
+        @include sectionContent;
+
+        .left{
+            width: 49%;
+
+            .form label {
+                display: block;
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .form input {
+                width: 80%;
+                height: 20px;
+            }
+
+            .form textarea {
+                width: 80%;
+            }
+
+            button {
+                margin: 20px 0;
+                background-color: $mainColor;
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                color: $textColor;
+                font-size: 10px;
+                font-weight: 500;
+                transition: $aTransition;
+
+                &:hover {
+                    background: $textColor;
+                    color: $backgroundColor;
+                    border: $backgroundColor solid;
+                }
+            }
+        }
+
+        .right{
+            width: 45%;
+
+            p{
+                margin: 30px 0;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .contact-detail {
+                i {
+                    display: block;
+                    margin: 10px 0;
+                    color: $mainColor;
+                    font-size: 20px;
+                }
+
+                p {
+                    display: inline;
+                    padding-left: 10px;
+                    color: $backgroundColor;
+                    font-weight: 500;
+                }
+            } 
+
+            .social-media {
+                margin: 30px 0;
+                font-size: 20px;
+
+                i {
+                    padding: 5px;
+
+                    &:hover {
+                        color: $mainColor;
+                        transform: $aTransform;
+                        transition: $aTransition;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+

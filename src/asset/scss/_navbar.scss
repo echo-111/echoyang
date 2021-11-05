@@ -1,0 +1,64 @@
+@import "./variables";
+
+
+.navbar{
+    z-index: 999;
+    position: fixed;
+    padding: 30px 0;
+    width: 100%;
+    font-family: $titleFont;
+    transition: $aTransition;
+
+    &.sticky {
+        padding: 15px 0;
+        background-color: $mainColor;
+    }
+
+    .max-width {
+        @include contentDisplay;
+    }
+
+    .logo a {
+        color: $textColor;
+        font-size: 35px;
+        font-weight: 600;
+
+        span {
+            color: $mainColor;
+            transition: $aTransition;
+        }
+    }
+
+    &.sticky .logo a span {
+        color: $textColor;
+    }
+
+    .menu li {
+        list-style: none;
+        display: inline-block;
+
+        a {
+            color: $textColor;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 25px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+    &.sticky .menu li a:hover {
+        color: $textColor;
+    }
+}
+
+.menu-btn {
+    color: $textColor;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+

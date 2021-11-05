@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+$mainColor: #a13f3f;
+$textColor: #fff;
+$backgroundColor: black;
+$titleFont: 'Ubuntu', sans-serif;
+$contentFont: 'Popins', sans-serif;
+$aTransition: all 0.3s ease;
+$aTransform: scale(1.05);
+$sectionPadding: 100px 0;
+
+
+@mixin contentDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin sectionDisplay {
+    display: flex;
+    font-family: $contentFont;
+}
+
+@mixin sectionContent {
+    @include contentDisplay;
+        flex-wrap: wrap;
+}
+
+@mixin  sectionTitle {
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: $titleFont;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+}
