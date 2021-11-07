@@ -14,37 +14,41 @@
         .left{
             width: 49%;
 
-            .form label {
-                display: block;
-                margin-top: 10px;
-                font-size: 15px;
-                font-weight: 500;
-            }
+            form {
+                label {
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
 
-            .form input {
-                width: 80%;
-                height: 20px;
-            }
+                input {
+                    width: 80%;
+                    height: 20px;
+                }
 
-            .form textarea {
-                width: 80%;
-            }
+                textarea {
+                    width: 80%;
+                }
 
-            button {
-                margin: 20px 0;
-                background-color: $mainColor;
-                padding: 10px;
-                border: none;
-                border-radius: 6px;
-                color: $textColor;
-                font-size: 10px;
-                font-weight: 500;
-                transition: $aTransition;
+                .send-me {
+                    height: 30px;
+                    width: 30%;
+                    margin: 20px 0;
+                    background-color: $mainColor;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 6px;
+                    color: $textColor;
+                    font-size: 10px;
+                    font-weight: 500;
+                    transition: $aTransition;
 
-                &:hover {
-                    background: $textColor;
-                    color: $backgroundColor;
-                    border: $backgroundColor solid;
+                    &:hover {
+                        background: $textColor;
+                        color: $backgroundColor;
+                        border: $backgroundColor solid;
+                    }
                 }
             }
         }

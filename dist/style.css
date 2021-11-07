@@ -330,20 +330,22 @@
 .contact .contact-content .left {
   width: 49%;
 }
-.contact .contact-content .left .form label {
+.contact .contact-content .left form label {
   display: block;
   margin-top: 10px;
   font-size: 15px;
   font-weight: 500;
 }
-.contact .contact-content .left .form input {
+.contact .contact-content .left form input {
   width: 80%;
   height: 20px;
 }
-.contact .contact-content .left .form textarea {
+.contact .contact-content .left form textarea {
   width: 80%;
 }
-.contact .contact-content .left button {
+.contact .contact-content .left form .send-me {
+  height: 30px;
+  width: 30%;
   margin: 20px 0;
   background-color: #a13f3f;
   padding: 10px;
@@ -354,7 +356,7 @@
   font-weight: 500;
   transition: all 0.3s ease;
 }
-.contact .contact-content .left button:hover {
+.contact .contact-content .left form .send-me:hover {
   background: #fff;
   color: black;
   border: black solid;

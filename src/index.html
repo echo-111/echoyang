@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Echo Young | Photographer | Designer | Full Stack Developer </title>
+    <meta name="description" content="Hello, I'm enthusiastic, self-motivated, reliable, responsible and hard working full stack developer who works in Sydney">
+    <meta property="og:title" content="Echo YOUNG | Full Stack Developer | Home">
+    <meta property="og:description" content="Hi I'm enthusiastic, self-motivated, reliable, responsible and hard working full stack developer who works in Sydney">
+    <meta name="twitter:title" content="Echo Young | Full Stack Developer | Home">
     <link rel="stylesheet" href=".././dist/style.css">
     <script src="https://kit.fontawesome.com/653955de32.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -169,7 +173,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <h3>Send Me A Message</h3>
-                    <div class="form">
+                    <form>
                         <label class="label">Name</label>
                         <input type="text">
                         <label class="label">Email</label>
@@ -178,8 +182,8 @@
                         <textarea rows="3" ></textarea>
                         <label class="label">Additional details</label>
                         <textarea rows="5" ></textarea>
-                    </div>
-                    <button class="send">Send Me</button>
+                        <input type="submit" class="send-me" value="Send Me" onclick="alert('message sent')">
+                    </form>
                 </div>
                 <div class="column right">
                     <h3>Get In Tough</h3>
@@ -209,7 +213,6 @@
     <footer>
         <span>EchoYoung | <span class="far fa-copyright"></span> 2021 All right reserved</span> 
     </footer>
-
     <script src="./js/script.js"></script>
 
 </body>
