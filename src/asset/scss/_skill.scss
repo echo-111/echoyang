@@ -1,0 +1,56 @@
+@import "./variables";
+
+.skill {
+    @include sectionDisplay;
+    color: $textColor;
+    background-color: $backgroundColor;
+    padding: $sectionPadding;
+
+    .title {
+        @include sectionTitle;
+    }
+
+    .skill-content {
+        @include sectionContent;
+
+        .card {
+            width: 32%;
+            background-color: #222;
+            text-align: center;
+            border-radius: 6px;
+            padding: 20px 25px;
+            cursor: pointer;
+            transition: $aTransition;
+
+            &:hover {
+                background-color: $mainColor;
+
+                .container {
+                    transform: $aTransform;
+
+                    i {
+                        color: $textColor;
+                    }
+                }
+            }
+
+            .container {
+                margin-top: 10px;
+                transition: $aTransition;
+
+                i {
+                    font-size: 50px;
+                    color: $mainColor;
+                }
+
+                .skill-name{
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    
+}

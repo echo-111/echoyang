@@ -1,0 +1,38 @@
+@import "./variables";
+
+.home{
+    display: flex;
+    background: url(../src/asset/images/photo/IMG_2014.PNG) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: $textColor;
+    min-height: 500px;
+    font-family: $titleFont;
+
+    .max-width{
+        margin: auto 0 auto 40px;
+    }
+
+    .home-content {
+        .text-1{
+            font-size: 27px;
+        }
+
+        .text-2{
+            font-size: 72px;
+            font-weight: 600;
+            margin: -3px;
+        }
+
+        .text-3{
+            font-size: 40px;
+            margin: 5px 0;
+
+            span {
+                color: $mainColor;
+                font-weight: 500;
+            }
+        }
+    }
+}
