@@ -173,16 +173,19 @@
             <div class="contact-content">
                 <div class="column left">
                     <h3>Send Me A Message</h3>
-                    <form>
+                    <form 
+                        action="https://formspree.io/f/xzbylyny"
+                        method="POST"
+                    >
                         <label class="label">Name</label>
                         <input type="text">
-                        <label class="label">Email</label>
+                        <label class="label" name="_replyto">Email</label>
                         <input type="email">
                         <label class="label">Your Interest</label>
-                        <textarea rows="3" ></textarea>
-                        <label class="label">Additional details</label>
-                        <textarea rows="5" ></textarea>
-                        <input type="submit" class="send-me" value="Send Me" onclick="alert('message sent')">
+                        <textarea rows="3" name="message"></textarea>
+                        <label class="label" >Additional details</label>
+                        <textarea rows="5" name="Additional"></textarea>
+                        <input type="submit" class="send-me" value="Send Me">
                     </form>
                 </div>
                 <div class="column right">
